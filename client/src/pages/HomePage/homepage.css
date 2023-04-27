@@ -1,0 +1,15 @@
+.cardContainer {
+  width: 1366px;
+  height: 768px;
+  padding: 200px 80px;
+  display: flex;
+  row-gap: 80px;
+  column-gap: 134px;
+  flex-wrap: wrap;
+}
+
+.addIcon {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
