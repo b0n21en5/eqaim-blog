@@ -1,5 +1,4 @@
 import express from "express";
-import dotenv from "dotenv";
 import cors from "cors";
 import blogRoutes from "./routes/blogRoutes.js";
 import connectDB from "./config/db.js";
@@ -7,8 +6,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const app = express();
-
-dotenv.config();
 
 // database config
 connectDB();
@@ -32,6 +29,4 @@ app.use("*", function (req, res) {
 
 const PORT = 8080;
 
-app.listen(PORT, () => {
-  console.log("connected to backend");
-});
+app.listen(PORT, () => {});
